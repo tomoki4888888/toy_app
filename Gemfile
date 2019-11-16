@@ -21,8 +21,9 @@ group :development do
   gem 'spring-watcher-listen', '2.0.1'
 end
 
-group :production do
-  gem 'pg', '0.20.0'
+group :development, :test do
+  gem 'mysql2', '~> 0.4.4'
+  gem 'byebug',  '9.0.6', platform: :mri
 end
 
 # Windows環境ではtzinfo-dataというgemを含める必要があります
